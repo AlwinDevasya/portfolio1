@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Playfair", serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href=""><h1 class="text-2xl font-bold">ALWIN DEVASYA</h1></a>
+            <nav>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-red-500">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-red-500">About</a></li>
+                    <li><a href="./skills.html" class="hover:text-red-500">Skills</a></li>
+                    <li><a href="./project.html" class="hover:text-red-500">Projects</a></li>
+                    <li><a href="./contact.html" class="hover:text-red-500">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" class="text-xl text-white px-4 py-2 rounded-full md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-700">
+            <ul class="space-y-4 p-4">
+                <li><a href="./index.html" class="block text-white hover:text-red-500">Home</a></li>
+                <li><a href="./about.html" class="block text-white hover:text-red-500">About</a></li>
+                <li><a href="./skills.html" class="block text-white hover:text-red-500">Skills</a></li>
+                <li><a href="./project.html" class="block text-white hover:text-red-500">Projects</a></li>
+                <li><a href="./contact.html" class="block text-white hover:text-red-500">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container mx-auto p-8 mb-12">
+        <h2 class="text-3xl font-bold mb-4">Technical Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-bold">HTML</h3>
+                <p class="mt-2">Expert in HTML5, creating well-structured and semantic web pages.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-bold">CSS</h3>
+                <p class="mt-2">Proficient in CSS3, with experience in Flexbox, Grid, and responsive design.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-bold">JavaScript</h3>
+                <p class="mt-2">Strong understanding of ES6+ features, DOM manipulation, and event handling.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-bold">Bootstrap</h3>
+                <p class="mt-2">Skilled in using Bootstrap for building responsive and mobile-first websites.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-bold">Tailwind CSS</h3>
+                <p class="mt-2">Adept at using Tailwind CSS for utility-first styling and rapid UI development.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-bold">React</h3>
+                <p class="mt-2">Experienced in building dynamic and interactive user interfaces with React.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-bold">Node.js</h3>
+                <p class="mt-2">Proficient in building server-side applications and APIs with Node.js.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-bold">Python</h3>
+                <p class="mt-2">Experienced in Python for scripting, automation, and web development (Django, Flask).</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-bold">SQL</h3>
+                <p class="mt-2">Skilled in writing complex SQL queries for database management and analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 text-center mt-28">
+        <p>&copy; 2024 ALWIN DEVASYA. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

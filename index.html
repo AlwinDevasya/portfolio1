@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: "Playfair", serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href=""><h1 class="text-2xl font-bold">ALWIN DEVASYA</h1></a>
+            <nav>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#home" class="hover:text-red-500">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-red-500">About</a></li>
+                    <li><a href="./skills.html" class="hover:text-red-500">Skills</a></li>
+                    <li><a href="./project.html" class="hover:text-red-500">Projects</a></li>
+                    <li><a href="./contact.html" class="hover:text-red-500">Contact</a></li>
+                </ul>
+                <button id="menu-toggle" class="text-xl text-white md:hidden focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-700">
+            <ul class="space-y-4 p-4">
+                <li><a href="#home" class="block text-white hover:text-red-500">Home</a></li>
+                <li><a href="./about.html" class="block text-white hover:text-red-500">About</a></li>
+                <li><a href="./skills.html" class="block text-white hover:text-red-500">Skills</a></li>
+                <li><a href="./project.html" class="block text-white hover:text-red-500">Projects</a></li>
+                <li><a href="./contact.html" class="block text-white hover:text-red-500">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://imgcdn.stablediffusionweb.com/2024/11/2/f4d83c4a-fbb6-4008-8b5d-d30eba771326.jpg');">
+        <div class="text-center text-white px-4">
+            <h1 class="text-5xl md:text-6xl font-bold">Welcome</h1>
+            <p class="text-3xl md:text-4xl mt-4 font-bold">I'm <span class="text-red-500">ALWIN DEVASYA</span></p>
+            <p class="text-xl md:text-2xl mt-2 font-bold">MEA(R)N STACK DEVELOPER</p>
+            <button style="width: 160px; height: 50px; background-color:black;color:rgb(226, 88, 88);border-radius:10px; margin-top: 10px;"><a href="./ALWIN.pdf" download>Download PDF</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ALWIN DEVASYA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Playfair", serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href=""><h1 class="text-2xl font-bold">ALWIN DEVASYA</h1></a>
+            <nav>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-red-500">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-red-500">About</a></li>
+                    <li><a href="./skills.html" class="hover:text-red-500">Skills</a></li>
+                    <li><a href="./project.html" class="hover:text-red-500">Projects</a></li>
+                    <li><a href="./contact.html" class="hover:text-red-500">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" class="text-xl text-white px-4 py-2 rounded-full md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-700">
+            <ul class="space-y-4 p-4">
+                <li><a href="./index.html" class="block text-white hover:text-red-500">Home</a></li>
+                <li><a href="./about.html" class="block text-white hover:text-red-500">About</a></li>
+                <li><a href="./skills.html" class="block text-white hover:text-red-500">Skills</a></li>
+                <li><a href="./project.html" class="block text-white hover:text-red-500">Projects</a></li>
+                <li><a href="./contact.html" class="block text-white hover:text-red-500">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container mx-auto p-8 flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/3 flex justify-center">
+            <img src="./alwin.jpg" alt="Your Name" class="rounded-full shadow-lg max-w-[200px] md:max-w-[300px]">
+        </div>
+        <div class="w-full md:w-2/3 mt-6 md:mt-0 md:ml-6 text-center md:text-left">
+            <h2 class="text-3xl font-bold mb-4">I am ALWIN DEVASYA</h2>
+            <p class="text-lg">I am a passionate computer science graduate with a strong background in software development, web technologies, and machine learning. I love building impactful projects and continuously learning new skills. In my free time, I enjoy exploring the latest tech trends, participating in hackathons, and contributing to open-source projects.</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2024 ALWIN DEVASYA. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

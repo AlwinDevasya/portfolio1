@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- boxicon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: "Playfair", serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="bg-gray-800 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href=""><h1 class="text-2xl font-bold">ALWIN DEVASYA</h1></a>
+            <nav>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-red-500">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-red-500">About</a></li>
+                    <li><a href="./skills.html" class="hover:text-red-500">Skills</a></li>
+                    <li><a href="./project.html" class="hover:text-red-500">Projects</a></li>
+                    <li><a href="./contact.html" class="hover:text-red-500">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" class="text-xl text-white px-4 py-2 rounded-full md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-700">
+            <ul class="space-y-4 p-4">
+                <li><a href="./index.html" class="block text-white hover:text-red-500">Home</a></li>
+                <li><a href="./about.html" class="block text-white hover:text-red-500">About</a></li>
+                <li><a href="./skills.html" class="block text-white hover:text-red-500">Skills</a></li>
+                <li><a href="./project.html" class="block text-white hover:text-red-500">Projects</a></li>
+                <li><a href="./contact.html" class="block text-white hover:text-red-500">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- project -->
+    <div class="mt-16 text-center">
+        <h1 class="text-black font-bold text-3xl sm:text-5xl focus-in-contract">Projects</h1>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-16 mb-12 px-6">
+        <div class="card">
+            <img class="w-full h-48 object-cover"
+                src="https://img.freepik.com/premium-photo/smartphone-with-shopping-cart-blank-empty-screen-blue-stage-background-online-shopping-delivery-business-e-commerce-store-social-media-application-concept-3d-illustration-rendering_10307-1523.jpg"
+                alt="Mobile Store">
+            <div class="card__content p-4">
+                <p class="card__title text-lg font-bold text-aqua">MOBILE STORE</p>
+                <p class="card__description text-md mt-2">The Online Mobile Store is a comprehensive e-commerce platform designed to provide customers with a wide range of mobile phones, accessories, and related products. The platform aims to simplify the mobile shopping experience, allowing users to browse, compare, and purchase mobile devices and accessories from top brands, all in one place.</p>
+                <button class="card__button mt-4 px-4 py-2 bg-gray-800 text-white rounded"><a href="https://alwindevasya.github.io/mobilestore/" class="text-aqua">Live Demo</a></button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="w-full h-48 object-cover" src="https://c0.wallpaperflare.com/preview/484/270/562/read-book-books-book-store.jpg" alt="Online Book Store">
+            <div class="card__content p-4">
+                <p class="card__title text-lg font-bold text-aqua">ONLINE BOOK STORE</p>
+                <p class="card__description text-md mt-2">The Online Bookstore Platform aims to provide a seamless digital shopping experience for book lovers worldwide. This platform will offer a wide variety of books across different genres, formats (hardcover, paperback, e-books, audiobooks), and languages, enabling users to easily browse, discover, and purchase their favorite titles. </p>
+                <button class="card__button mt-4 px-4 py-2 bg-gray-800 text-white rounded"><a href="https://theonlinebookstore.vercel.app/" class="text-aqua">Live Demo</a></button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="w-full h-48 object-cover" src="https://media.istockphoto.com/id/1154232730/photo/wedding-decor-rustic-dining-table.jpg?s=612x612&w=0&k=20&c=5jkhCsCL5Jz6KapC_j4n9mOx2CoexcKQTjFVa1Td6-0=" alt="Event Management Website">
+            <div class="card__content p-4">
+                <p class="card__title text-lg font-bold text-aqua">EVENT MANAGEMENT WEBSITE</p>
+                <p class="card__description text-md mt-2">The Event Management Website is a comprehensive platform designed to streamline the planning, organization, and execution of events. The platform will cater to individuals, businesses, and organizations looking to manage events of various scales, from small gatherings to large conferences, weddings, and corporate events. </p>
+                <button class="card__button mt-4 px-4 py-2 bg-gray-800 text-white rounded"><a href="https://elite-event-management.vercel.app/" class="text-aqua">Live Demo</a></button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="w-full h-48 object-cover" src="https://media.istockphoto.com/id/1500285927/photo/young-woman-a-university-student-studying-online.jpg?s=612x612&w=0&k=20&c=yvFDnYMNEJ6WEDYrAaOOLXv-Jhtv6ViBRXSzJhL9S_k=" alt="Online Educational Platform">
+            <div class="card__content p-4">
+                <p class="card__title text-lg font-bold text-aqua">ONLINE EDUCATIONAL WEBSITE</p>
+                <p class="card__description text-md mt-2">The Online Educational Platform is a comprehensive e-learning solution designed to deliver high-quality education and training to learners of all ages and backgrounds. This platform will offer a wide range of online courses, from academic subjects to professional development, with assessments,certifications etc. </p>
+                <button class="card__button mt-4 px-4 py-2 bg-gray-800 text-white rounded"><a href="https://alwindevasya.github.io/xylem/" class="text-aqua">Live Demo</a></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2024 ALWIN DEVASYA. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
